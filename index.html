@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>الرئيسية | شركة بزوغ الفجر للمقاولات واستيراد مواد البناء</title>
+
+  <meta name="description" content="شركة بزوغ الفجر متخصصة في تنفيذ أعمال المقاولات واستيراد مواد البناء الأصلية بجودة عالية وأسعار منافسة في ليبيا.">
+
+  <meta name="keywords" content="بزوغ الفجر, مقاولات, مواد بناء, استيراد مواد بناء, مقاولات عامة, مواد بناء أصلية, ليبيا">
+
+  <meta name="author" content="محمد">
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="شركة بزوغ الفجر للمقاولات واستيراد مواد البناء">
+  <meta property="og:description" content="شركة بزوغ الفجر للمقاولات واستيراد مواد البناء في ليبيا.">
+  <meta property="og:image" content="images/logo.png">
+  <meta property="og:url" content="https://mateamohammed019-cloud.github.io/Buzou-Al-Fajr/">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ===== القسم الترحيبي ===== */
+    .hero {
+      background: linear-gradient(180deg, #1c1917 0%, #44403c 55%, #d9530e 100%);
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+      border-radius: 0 0 35px 35px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 4px;
+      background: #fbbf24;
+      border-radius: 2px;
+    }
+
+    .hero img {
+      width: 95px;
+      height: 95px;
+      margin-bottom: 18px;
+      background: white;
+      border-radius: 50%;
+      padding: 6px;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin: 10px 0;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      margin-bottom: 30px;
+      color: #e5e7eb;
+    }
+
+    .hero button {
+      background: #d9530e;
+      color: #fff;
+      border: none;
+      padding: 14px 30px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background: #f5790f;
+      transform: scale(1.07);
+    }
+
+    /* ===== الخدمات ===== */
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin: 70px auto;
+      max-width: 1100px;
+    }
+
+    .service-card {
+      background: linear-gradient(180deg, #ffffff, #faf7f4);
+      border-radius: 20px;
+      box-shadow: 0 8px 22px rgba(28,25,23,0.1);
+      padding: 30px 25px;
+      width: 300px;
+      text-align: center;
+      transition: 0.35s;
+      border-top: 4px solid #d9530e;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 14px 32px rgba(28,25,23,0.18);
+    }
+
+    .service-card img {
+      width: 65px;
+      height: 65px;
+      margin-bottom: 18px;
+    }
+
+    .service-card h3 {
+      color: #1c1917;
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .service-card p {
+      color: #57534e;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    /* ===== بانر التواصل ===== */
+    .contact-banner {
+      background: linear-gradient(135deg, #44403c, #1c1917);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 80px;
+      border-top: 3px solid #d9530e;
+    }
+
+    .contact-banner h3 {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    .social-links a {
+      margin: 0 12px;
+      display: inline-block;
+    }
+
+    .social-links img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #1c1917;
+      padding: 6px;
+      transition: 0.3s;
+    }
+
+    .social-links img:hover {
+      background: #d9530e;
+      transform: scale(1.15);
+    }
+
+    .contact-banner p {
+      margin-top: 25px;
+      font-size: 14px;
+      color: #d6d3d1;
+    }
+  /* ===== الشركاء والموردون (حركة تلقائية مستمرة بدون توقف) ===== */
+.brands {
+  text-align: center;
+  margin-top: 80px;
+  padding: 40px 0;
+  background: #faf7f4;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.brands h2 {
+  font-size: 26px;
+  color: #1c1917;
+  margin-bottom: 30px;
+}
+
+/* الحاوية */
+.brands-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+/* المسار: المحتوى مكرر مرتين، والحركة تنتقل بمقدار نصف العرض فقط
+   فتبدو متصلة بلا فجوة وبلا انتظار لإعادة الظهور */
+.brands-track {
+  display: flex;
+  gap: 25px;
+  width: max-content;
+  animation: scrollBrands 32s linear infinite;
+  will-change: transform;
+}
+
+/* الكروت */
+.brand-card {
+  background: white;
+  padding: 18px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(28,25,23,0.08);
+  min-width: 130px;
+  border-top: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+/* الصورة */
+.brand-card img {
+  width: 80px;
+  height: auto;
+  opacity: 0.8;
+  filter: grayscale(35%);
+  transition: 0.3s;
+}
+
+/* تأثير hover */
+.brand-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(28,25,23,0.15);
+  border-top-color: #d9530e;
+}
+
+.brand-card:hover img {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+/* الحركة: تنتقل بمقدار نصف عرض المسار (نسخة واحدة من الكروت) فقط
+   لأن المحتوى مكرر مرتين، وهذا يحقق تمريراً متصلاً بلا انقطاع */
+@keyframes scrollBrands {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* إيقاف الحركة عند المرور */
+.brands-track:hover {
+  animation-play-state: paused;
+}
+  </style>
+</head>
+
+<body>
+
+  <div id="navbar"></div>
+  <div id="sidebar-container"></div>
+
+  <div class="content">
+
+    <!-- الترحيب -->
+    <section class="hero">
+      <img src="images/logo.png" alt="شعار شركة بزوغ الفجر">
+      <h1>شركة بزوغ الفجر للمقاولات واستيراد مواد البناء</h1>
+      <p>متخصصون في تنفيذ المشاريع الإنشائية واستيراد مواد البناء الأصلية بجودة عالية وأسعار تنافسية.</p>
+      <button onclick="window.location.href='pages/cotactus.html'">
+        من نحن
+      </button>
+    </section>
+
+    <!-- الخدمات -->
+    <section class="services">
+
+      <div class="service-card">
+        <img src="images/1.png" alt="مقاولات عامة">
+        <h3>مقاولات عامة</h3>
+        <p>نقوم بتنفيذ جميع أنواع المشاريع الإنشائية والمقاولات بحرفية ودقة عالية وفق الجدول الزمني المحدد.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/2.png" alt="استيراد مواد البناء">
+        <h3>استيراد مواد البناء</h3>
+        <p>نستورد مواد البناء من أفضل المصانع العالمية وبمواصفات تضمن الجودة ومتانة المشروع.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/3.png" alt="مواد بناء متنوعة">
+        <h3>مواد بناء متنوعة</h3>
+        <p>مجموعة متنوعة من مواد البناء بأسعار مناسبة تلبي احتياجات جميع المشاريع والعملاء.</p>
+      </div>
+
+    </section>
+<section class="brands">
+  <h2>الشركاء والموردون</h2>
+
+  <div class="brands-slider">
+    <div class="brands-track">
+      <!-- المجموعة الأولى -->
+      <div class="brand-card"><img src="images/lafarge.png" alt="Lafarge"></div>
+      <div class="brand-card"><img src="images/holcim.png" alt="Holcim"></div>
+      <div class="brand-card"><img src="images/cemex.png" alt="Cemex"></div>
+      <div class="brand-card"><img src="images/saint-gobain.png" alt="Saint-Gobain"></div>
+      <div class="brand-card"><img src="images/knauf.png" alt="Knauf"></div>
+      <div class="brand-card"><img src="images/hilti.png" alt="Hilti"></div>
+      <div class="brand-card"><img src="images/bosch.png" alt="Bosch"></div>
+      <div class="brand-card"><img src="images/makita.png" alt="Makita"></div>
+      <div class="brand-card"><img src="images/caterpillar.png" alt="Caterpillar"></div>
+      <div class="brand-card"><img src="images/jcb.png" alt="JCB"></div>
+      <div class="brand-card"><img src="images/sika.png" alt="Sika"></div>
+      <div class="brand-card"><img src="images/ytong.png" alt="Ytong"></div>
+      <!-- نسخة مكررة من نفس المجموعة لضمان حركة متصلة بلا فجوة -->
+      <div class="brand-card" aria-hidden="true"><img src="images/lafarge.png" alt="" aria-hidden="true"></div>
+      <div class="brand-card" aria-hidden="true"><img src="images/holcim.png" alt="" aria-hidden="true"></div>
+      <div class="brand-card" aria-hidden="true"><img src="images/cemex.png" alt="" aria-hidden="true"></div>
+      <div class="brand-card" aria-hidden="true"><img src="images/saint-gobain.png" alt="" aria-hidden="true"></div>
+      <div class="brand-card" aria-hidden="true"><img src="images/knauf.png" alt="" aria-hidden="true"></div>
+      <div class="brand-card" aria-hidden="true"><img src="images/hilti.png" alt="" aria-hidden="true"></div>
+      <div class="brand-card" aria-hidden="true"><img src="images/bosch.png" alt="" aria-hidden="true"></div>
+      <div class="brand-card" aria-hidden="true"><img src="images/makita.png" alt="" aria-hidden="true"></div>
+      <div class="brand-card" aria-hidden="true"><img src="images/caterpillar.png" alt="" aria-hidden="true"></div>
+      <div class="brand-card" aria-hidden="true"><img src="images/jcb.png" alt="" aria-hidden="true"></div>
+      <div class="brand-card" aria-hidden="true"><img src="images/sika.png" alt="" aria-hidden="true"></div>
+      <div class="brand-card" aria-hidden="true"><img src="images/ytong.png" alt="" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+    <!-- التواصل -->
+    <section class="contact-banner">
+      <h3>تواصل معنا عبر وسائل التواصل</h3>
+
+      <div class="social-links">
+        <a href="#" target="_blank">
+          <img src="images/facebook.png" alt="Facebook">
+        </a>
+        <a href="#" target="_blank">
+          <img src="images/whatsapp.webp" alt="WhatsApp">
+        </a>
+        <a href="#" target="_blank">
+          <img src="images/tiktok.png" alt="TikTok">
+        </a>
+      </div>
+
+      <p>© 2026 شركة بزوغ الفجر للمقاولات واستيراد مواد البناء – جميع الحقوق محفوظة</p>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
